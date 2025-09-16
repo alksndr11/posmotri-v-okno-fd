@@ -59,7 +59,7 @@ a {
   flex-direction: row;
   align-items: end;
   gap: 30px;
-  max-width: 1140px;
+  /* max-width: 1140px; */
 
 }
 
@@ -86,7 +86,7 @@ a {
   font-family: 'Oswald', sans-serif;
   font-weight: 700;
   font-size: 75px;
-  line-height: 94%;
+  line-height: .94;
   text-transform: uppercase;
 }
 
@@ -99,16 +99,23 @@ a {
   color: #fff;
   font-family: 'Oswald', sans-serif;
   font-size: 30px;
+  line-height: 1;
   text-transform: uppercase;
   text-overflow: ellipsis;
   white-space: nowrap;
+  padding-block-end: 6px;
+}
+
+.result {
+    display: grid;
+    grid-auto-rows: 1fr min-content;
+    gap: 16px;
 }
 
 .result__video-container {
   position: relative;
   width: 711px;
   height: 386px;
-  margin-bottom: 16px;
 }
 
 .result__video {
@@ -154,7 +161,7 @@ a {
   color: #fff;
   font-weight: 400;
   font-size: 18px;
-  line-height: 16.2px;
+  line-height: .9;
   -webkit-line-clamp: 3;
   line-clamp: 3;
   -webkit-box-orient: vertical;
